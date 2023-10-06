@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Docmentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <nav id="navbar">
+      <ul>
+        <header>Documentation HTML</header>
+        <li><a class="nav-link" href="#Introduction_au_HTML" acceskey="1">Introduction au HTML</a></li>
+        <li><a class="nav-link" href="#Qu'est_ce_que_le_HTML?" acceskey="2">Qu'est ce que le HTML?</a></li>
+        <li><a class="nav-link" href="#Anatomie_d'un_élément_HTML" acceskey="3">Anatomie d'un élément HTML</a></li>
+        <li><a class="nav-link" href="#Éléments_imbriqués" acceskey="4">Éléments imbriqués</a></li>
+        <li><a class="nav-link" href="#Éléments_bloc_vs_en_ligne" acceskey="5">Éléments bloc vs en ligne</a></li>
+        <li><a class="nav-link" href="#Éléments_vides" acceskey="6">Éléments vides</a></li>
+        <li><a class="nav-link" href="#Attributs" acceskey="7">Attributs</a></li>
+        <li><a class="nav-link" href="#Apprentissage_actif_:_ajouter_des_attributs_à_un_élément" acceskey="8">Apprentissage actif : ajouter des attributs à un élément</a></li>
+        <li><a class="nav-link" href="#Les_attributs_booléens" acceskey="9">Les attributs booléens</a></li>
+        <li><a class="nav-link" href="#Omettre_des_guillemets_autour_des_valeurs_d'attribut" acceskey="A">Omettre des guillemets autour des valeurs d'attribut</a></li>
+
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_au_HTML">
+        <header>Introduction au HTML</header><div class="divider"></div>
+        <p>Dans son cœur, HTML est un langage vraiment simple, composé d'éléments appliquables à des fragments de texte dans un document pour leur donner un sens différent (est-ce un paragraphe ? est-ce une liste à puces ? est-ce une partie de tableau ?), pour structurer un document en sections logiques (a t il un en-tête ? est-il sur trois colonnes ? a-t-il un menu de navigation ?) et pour intégrer du contenu comme images ou vidéos dans une page. Ce module est une introduction aux deux premiers concepts ; il présente les notions fondamentales et la syntaxe à connaître pour comprendre le HTML.</p>
+      </section>
+
+      <section class="main-section" id="Qu'est_ce_que_le_HTML?">
+        <header>Qu'est ce que le HTML?</header><div class="divider"></div>
+        <p>HTML (<span class="bold">H</span>yper<span class="bold">T</span>ext <span class="bold">M</span>arkup <span class="bold">L</span>anguage) n'est pas un langage de programmation : c'est un langage de balisage qui sert à indiquer au navigateur comment structurer les pages web visitées. Il peut être aussi compliqué ou aussi simple que le développeur web souhaite qu'il soit. Le HTML se compose d'une série d'éléments avec lesquels vous pouvez encadrer, envelopper ou baliser différentes parties du contenu pour les faire apparaître ou agir d'une certaine manière. Des balises encadrantes peuvent transformer une petite partie de contenu en un lien vers une autre page sur le Web, mettre des mots en italique, etc. Par exemple, prenons la phrase suivante :</p>
+
+        <code class="code_box">Mon chat est très grincheux</code>
+
+        <p>"Si nous voulons que cette ligne reste en l'état, nous pouvons dire qu'il s'agit d'un paragraphe en l'enveloppant d'un élément paragraphe (<code>&ltp&gt</code>) :"</p>
+
+        <code class="code_box">&ltp&gtMon chat est très grincheux&lt/p&gt</code>
+        <div class="note">
+          <p><span class="bold">Note :</span> Les éléments en HTML ne sont pas sensibles à la casse, c'est-à-dire qu'ils peuvent être écrits en majuscules ou en minuscules. Par exemple, un élément <code>&lttitle&gt</code> peut être écrit <code>&lttitle&gt</code>, <code>&ltTITLE&gt</code>, <code>&ltTitle&gt</code>, <code>&ltTiTlE&gt</code>, etc. et il fonctionnera parfaitement. La meilleure pratique, cependant, est d'écrire tous les éléments en minuscules pour des raisons de cohérence, de lisibilité et autre.</p>
+        </div>
+      </section>
+
+      <section class="main-section" id="Anatomie_d'un_élément_HTML">
+        <header>Anatomie d'un élément HTML</header><div class="divider"></div>
+        <p>Regardons notre élément paragraphe d'un peu plus près :</p>
+        <img class="image" id="anatomy" src="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started/chat-grincheuxl.png" atl="html anatomy" />
+        <p>Les principales parties de notre élément sont :</p>
+        <ul>
+          <li><span class="bold">La balise ouvrante :</span> il s'agit du nom de l'élément (dans ce cas, p), encadré par un <span class="bold">chevron ouvrant (<)</span> et un <span class="bold">chevron fermant (>)</span>. Elle indique où l'élément commence ou commence à prendre effet — dans ce cas où commence le paragraphe.</li>
+          <li><span class="bold">Le contenu :</span> il s'agit du contenu de l'élément. Dans notre cas, c'est simplement du texte.</li>
+          <li><span class="bold">La balise fermante :</span> c'est la même que la balise ouvrante, sauf qu'elle comprend une <span class="bold">barre oblique (/)</span> avant le nom de l'élément. Elle indique la fin de l'élément — dans ce cas, la fin du paragraphe. Ne pas inclure une balise de fermeture est une erreur fréquente chez les débutants, et peut amener des résultats étranges.</li>
+        </ul>
+        <p>La balise ouvrante, suivie par le contenu puis par la balise fermante, composent ensemble l'élément.</p>
+      </section>
+
+      <section class="main-section" id="Éléments_imbriqués">
+        <header>Éléments imbriqués</header><div class="divider"></div>
+        <p>Vous pouvez mettre des éléments à l'intérieur d'autres éléments — cela s'appelle l'<span class="bold">imbrication</span>. Si vous voulez affirmer que votre chat est <span class="bold">très</span> grincheux, vous pouvez mettre le mot « très » dans l'élément <code>&ltstrong></code>, pour qu'il soit fortement mis en valeur :</p>
+        <code class="code_box">&ltp>Mon chat est &ltstrong>très&lt/strong> grincheux.&lt/p></code>
+        <p>Vous devez toutefois vous assurer que vos éléments sont correctement imbriqués : dans l'exemple ci-dessus, nous avons ouvert l'élément <code>p</code> en premier, puis l'élément <code>strong</code>, donc nous devons fermer l'élément <code>strong</code> d'abord, puis l'élément <code>p</code>. Ce qui suit est <i>incorrect</i> :</p>
+        <code class="code_box">&ltp>Mon chat est &ltstrong>très grincheux.&lt>/p>&lt/strong></code>
+        <p><span class="bold">Les éléments doivent être ouverts et fermés correctement afin d'être clairement à l'intérieur ou à l'extérieur l'un de l'autre.</span> Si les balises se chevauchent comme dans l'exemple ci-dessus, votre navigateur web essaiera de deviner ce que vous vouliez dire, et vous pourrez obtenir des résultats inattendus. Autant éviter !</p>
+      </section>
+
+      <section class="main-section" id="Éléments_bloc_vs_en_ligne">
+        <header>Éléments bloc vs en ligne</header><div class="divider"></div>
+        <p>Il existe deux catégories importantes d'éléments en HTML que vous devez connaître : les éléments de niveau bloc et les éléments en ligne.</p>
+        <ul>
+          <li>Les éléments de niveau <span class="bold">bloc</span> forment <span class="bold">un bloc visible sur une page</span> — ils apparaissent sur une nouvelle ligne quel que soit le contenu précédant et tout contenu qui les suit apparaît également sur une nouvelle ligne. Les éléments de niveau bloc sont souvent des éléments structurels de la page et représentent, par exemple, des paragraphes, des listes, des menus de navigation, des pieds de page, etc. Un élément de niveau bloc ne peut pas être imbriqué dans un élément en ligne, mais il peut être imbriqué dans un autre élément de niveau bloc.</li>
+          <li>Les éléments en <span class="bold">ligne</span> sont contenus <span class="bold">dans des éléments de niveau bloc.</span> Ils entourent seulement des petites parties du contenu du document, ni des paragraphes entiers, ni des regroupements de contenu. Un élément en ligne ne fait pas apparaître une nouvelle ligne dans le document. Il apparaît généralement dans un paragraphe de texte, par exemple un élément <code>&lta></code> (hyperlien) ou des éléments de mise en évidence tels que <code>&ltem></code> ou <code>&ltstrong></code>.</li>
+        </ul>
+        <p>Prenez l'exemple suivant :</p>
+        <code class="code_box">&ltem>premier&lt/em>&ltem>deuxième&lt/em>&ltem>troisième&lt/em></br></br>
+
+&ltp>quatrième&lt/p></br>
+&ltp>cinquième&lt/p></br>
+&ltp>sixième&lt/p></code>
+        <p><code>&ltem></code> est un élément en ligne et, comme vous pouvez le voir ci-dessous, les trois premiers éléments s'affichent sur la même ligne sans qu'il n'y ait d'espace entre eux. Par contre, <code>&ltp></code> est un élément de niveau bloc, donc chaque élément apparaît sur une nouvelle ligne et un espace apparaît au-dessus et au-dessous de chacun d'eux (l'espacement est dû au style CSS par défaut du navigateur qui s'applique aux paragraphes).</p>
+      </section>
+
+      <section class="main-section" id="Éléments_vides">
+        <header>Éléments vides</header><div class="divider"></div>
+        <p>Tous les éléments ne suivent pas le modèle ci-dessus d'ouverture de balise, puis contenu, puis fermeture de balise. Certains éléments ne sont composés que d'une balise. Ils servent généralement à insérer / incorporer quelque chose dans le document à l'endroit où ils sont mis. Par exemple, l'élément <code>&ltimg /></code> ou <code>&ltimg></code> insère une image dans une page à l'endroit où il est placé (la balise auto-fermante <code>&ltimg /></code> est à privilégier) :</p>
+        <code class="code_box">&ltimg
+  src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" /></code>
+      </section>
+
+      <section class="main-section" id="Attributs">
+        <header>Attributs</header><div class="divider"></div>
+        <p>Les éléments peuvent aussi avoir des attributs, qui comme suit:</p>
+        <img class="image" id="attribute" src="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started/attribut-chat-grincheux.png" atl="attributes_exemple" />
+        <p>Les attributs contiennent des informations supplémentaires sur l'élément sans qu'elles n'apparaissent dans le contenu réel. Dans ce cas, l'attribut class vous permet de donner à l'élément un nom d'identification qui peut ensuite être utilisé pour cibler l'élément afin de lui attribuer un style CSS ou un comportement particulier, par exemple.</p>
+        <p>Pour créer un attribut, il faut:</p>
+        <ul>
+          <li>Insérer un espace entre cet attribut et le nom de l'élément (ou l'attribut précédent, si l'élément possède déjà un ou plusieurs attributs) ;</li>
+          <li>Donner un nom à l'attribut, puis ajouter un signe égal ;</li>
+          <li>Donner une valeur à l'attribut, entourée par des guillemets d'ouverture et de fermeture.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Apprentissage_actif_:_ajouter_des_attributs_à_un_élément">
+        <header>Apprentissage actif : ajouter des attributs à un élément</header><div class="divider"></div>
+        <p>Un autre exemple d'un élément est <code>&lta></code>. Il représente une ancre et permet de transformer en lien l'élément qu'il enveloppe. Il peut recevoir un certain nombre d'attributs, mais voici les deux principaux :</p>
+        <code class="code_box">href</code>
+        <p class="indented">cet attribut spécifie l'adresse web vers laquelle vous souhaitez que le lien pointe, c'est-à-dire l'adresse vers laquelle le navigateur redirigera lorsqu'on cliquera sur le lien. Par exemple, <code>href="https://www.mozilla.org/"</code>.</p>
+        <code class="code_box">title</code>
+        <p class="indented">l'attribut <code>title</code> apporte des informations supplémentaires sur le lien, comme le nom de la page vers laquelle le lien pointe. Par exemple, <code>title="Page d'Accueil Mozilla"</code>, qui apparaîtra comme une info-bulle lorsque le curseur passera sur le lien.</p>
+        <code class="code_box">target</code>
+        <p class="indented">l'attribut <code>target</code> définit le contexte de navigation utilisé pour afficher le lien. Par exemple, <code>target="_blank"</code> affichera le lien dans un nouvel onglet. Si vous voulez afficher le lien dans l'onglet courant, il suffit de ne pas mettre cet attribut.</p>
+      </section>
+
+      <section class="main-section" id="Les_attributs_booléens">
+        <header>Les attributs booléens</header><div class="divider"></div>
+        <p>Vous verrez parfois des attributs sans valeur définie : c'est tout à fait autorisé. Ils sont appelés attributs booléens ; ils ne peuvent avoir qu'une seule valeur, généralement la même que le nom de l'attribut. Par exemple, prenez l'attribut <code>disabled</code>, que vous pouvez affecter aux éléments <code>input</code> (éléments de saisie d'un formulaire) si vous voulez les <i>désactiver</i> (ils seront alors grisés) afin que l'utilisateur ne puisse pas y saisir de données.</p>
+        <code class="code_box">&ltinput type="text" disabled="disabled" /></code>
+        <p>Pour aller plus vite, il est parfaitement possible d'écrire cette même ligne de la façon suivante (nous avons également inclus un élément <code>input</code> non-désactivé pour référence, pour que vous puissiez vous faire une meilleure idée de ce qui se passe) :</p>
+        <code class="code_box">&lt!-- la présence de l'attribut disabled empêche l'utilisateur final d'entrer du texte dans le champ de saisie --></br>
+&ltinput type="text" disabled /></br></br>
+&lt!-- la saisie de texte est autorisée puisque l'attribut disabled est omis --></br>
+&ltinput type="text" /></code>
+      </section>
+
+      <section class="main-section" id="Omettre_des_guillemets_autour_des_valeurs_d'attribut">
+        <header>Omettre des guillemets autour des valeurs d'attribut</header><div class="divider"></div>
+        <p>Si vous regardez ce qui se passe sur le Web, vous rencontrerez tous types de styles de balises étranges, y compris des valeurs d'attribut sans guillemets. C'est permis dans certaines circonstances, mais cela va briser votre balisage dans d'autres. Par exemple, si nous revisitons notre exemple de lien ci-dessus, nous pourrons écrire une version de base avec <i>seulement</i> l'attribut <code>href</code>, comme ceci :</p>
+        <code class="code_box">&lta href=https://www.mozilla.org>mon site web favori&lt/a></code>
+        <p>Cependant, si nous ajoutons l'attribut <code>title</code> dans ce même style, cela devient incorrect :</p>
+        <code class="code_box">&lta href=https://www.mozilla.org/ title=La page d'accueil Mozilla>mon site web favori&lt/a></code>
+        <p>En effet, le navigateur interprétera mal la balise, pensant que l'attribut <code>title</code> est en fait quatre attributs — un attribut <code>title</code> avec la valeur « La » et trois attributs booléens, « <code>page</code> », « <code>d'accueil</code> » et « <code>Mozilla</code> ». Ce n'est évidemment pas ce qui était prévu et cela provoquera des erreurs ou un comportement inattendu dans le code, comme on le voit dans l'exemple en direct ci-dessous. Essayez de passer la souris sur le lien pour voir ce que le texte de <code>title</code> donne.</p>
+      </section>
+    </main>
+  </body>
+</html>
