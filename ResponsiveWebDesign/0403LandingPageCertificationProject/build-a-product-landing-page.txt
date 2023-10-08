@@ -1,0 +1,342 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link 
+      rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top" id="top"></div>
+    <section class="heading">
+      <header id="header">
+        <img
+          src="https://wankul.fr/cdn/shop/files/Wankul_Logo_Blanc.png?v=1669131313&width=500"
+          alt="wkl logo"
+          loading="lazy"
+          id="header-img"
+        />
+        <div class="nav">
+          <nav id="nav-bar">
+            <ul>
+              <li><a class="nav-link" href="#top" acceskey="h">Home</a></li>
+              <li><a class="nav-link" href="#form" acceskey="c">Contact</a></li>
+              <li><a class="nav-link" href="#video" acceskey="d">Détails</a></li>
+              <li><a class="nav-link" href="#shop" acceskey="p">Produits</a></li>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <main id="main">
+
+      <section class="contact">
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">Entrez votre e-mail parce que pourquoi pas: </label>
+          <input id="email" class="email" name="email" placeholder="exemple@monmail.com" type="email" />
+          <input id="submit" type="submit" value="Zépartis!" />
+        </form>
+      </section>
+
+      <section class="details">
+        <video id="video" width=600 loop="true" controls atl="wkl video" autoplay>
+          <source src="https://cdn.shopify.com/videos/c/o/v/d84bd10f493d415e939db86a1d099e27.mp4" type="video/mp4"/>          
+        </video>
+        <p><i class="fas fa-trophy"></i> Wankul Origins est la première série de cartes à collectionner basée sur l'univers des Wankils !
+La saison 1 compte 180 cartes illustrées, des plus communes aux légendaires, en passant par des versions brillantes et holographiques !</p>
+        <p><i class="fas fa-users"></i> Wankul est aussi jouable à deux : les cartes Personnage reprennent les Wankul les plus emblématiques de Laink et Terracid, tandis que les cartes Terrain s'inspirent d'une multitude de références aux vidéos Wankil.</p>
+        <h1 class="contact-title"><i class="fas fa-smile-beam"></i> DÉCOUVREZ LA COLLECTION COMPLÈTE DES 180 CARTES WANKUL ORIGINS ! <i class="fas fa-smile-beam"></i></h1>
+      </section>
+
+      <section class="produits" id="shop">
+        <div class="products">
+          <h3>BOOSTER 10 CARTES</h3>
+          <p class="price">5.50 €</p>
+          <p>Booster contenant 10 cartes Wankul.</p>
+          <p>Retrouvez 10 cartes de la collection Origins Wankul dans chaque paquet !</p>
+          <img class="img-p1" width=100 alt="product1"
+          src="https://wankul.fr/cdn/shop/files/b5copie.png?v=1696234797&width=1946"/>
+          <form class="buy" method="post" action="https://wankul.fr/products/booster">
+            <input type="submit" value="Visiter le site" />
+          </form>
+        </div>
+
+        <div class="products">
+          <h3>PACK 10 BOOSTERS</h3>
+          <p class="price">55.00 €</p>
+          <p>Ce pack contient 10 boosters de cartes Wankul !</p>
+          <p>Retrouvez 10 cartes de la collection Origins Wankul dans chaque booster.</p>
+          <img class="img-p2" width=100 alt="product2"
+          src="https://wankul.fr/cdn/shop/files/b2-1copie.png?v=1696235319&width=990"/>
+          <form class="buy" method="post" action="https://wankul.fr/products/pack-10-boosters">
+            <input type="submit" value="Visiter le site" />
+          </form>
+        </div>
+
+        <div class="products">
+          <h3>DISPLAY 24 BOOSTERS</h3>
+          <p class="price">132.00 €</p>
+          <p>Booster contenant 10 cartes Wankul.</p>
+          <p>Retrouvez 10 cartes de la collection Origins Wankul dans chaque booster</p>
+          <img class="img-p3" width=100 alt="product3"
+          src="https://wankul.fr/cdn/shop/files/0.png?v=1696236048&width=1946"/>
+          <form class="buy" method="post" action="https://wankul.fr/products/display">
+            <input type="submit" value="Visiter le site" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <adress>
+        <p>Réalisé par  <a href="https://www.linkedin.com/in/cl%C3%A9ment-grosselle/" target="_blank">Clément GROSSELLE</a> tout copié sur le site <a href="https://wankul.fr/">wankul.fr</a><br /></p>
+        <p>Toulouse<br /></p>
+        <p>France</p>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --bg-color1:#ffffff;
+  --bg-color2:#000000;
+  --bg-color3:linear-gradient(46deg, rgba(236, 236, 236, 1) 13%, rgba(236, 236, 236, 1) 86%);
+  --color1:#000000;
+  --color2:#ffffff;
+}
+
+*, ::before, ::after {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  //border: 1px solid #01beef32
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto Condensed, sans-serif;
+}
+
+header {
+  background-color: var(--bg-color2);
+  color: var(--color2);
+  font-family: Raleway, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+.nav {
+  display: inline;
+  width: 80%;
+  margin-left: 15rem;
+}
+
+#nav-bar a{
+  color: var(--color2);
+  text-decoration: none;
+  padding: 2em 1em;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+#header-img {
+  position: fixed;
+  left: 0;
+  width: 40%;
+  max-width: 15em;
+  padding: 2rem;
+}
+
+main {
+  background-color: var(--bg-color1);
+  color: var(--color1);
+  
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.fas {
+  color: #fcba03;
+}
+
+.contact {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  line-break: strict;
+  max-width: 40%;
+  align-items: center;
+}
+
+label {
+  font-size: 1.5em;
+  margin: 5em auto 0.5em;
+}
+
+.email {
+  width: 80%;
+  margin-bottom: 0.5em;
+  background: var(--bg-color3);
+  border: 1px solid black;
+  border-radius: 0.2em;
+  padding: 0.5em 0.5em;
+}
+
+.contact input[type="submit"] {
+  background-color: #00af00;
+  padding: 0.2em 0.5em;
+  font-family: "PT-Sans-Narrow", sans-serif;
+  border-radius: 0.2em;
+  border: 1px solid #009f00;
+  margin-bottom: 1.5em;
+}
+
+#video {
+  display: block;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  padding: 0 15% 1.5em;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details p {
+  font-size: 1.2em;
+  width: 60%;
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+.details h1 {
+  margin: 0.5em auto;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.details p i {
+  font-size: 2em;
+  padding: auto;
+  float: left;
+}
+
+#shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  text-align: center;
+  margin: 0 3em 2em;
+}
+
+#shop .products {
+  border: 1px solid black;
+  border-radius: 0.8em;
+}
+
+#shop h3 {
+  background: var(--bg-color3);
+  padding: 0.4em;
+  font-size: 1.5em;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+#shop .price {
+  font-weight: 800;
+}
+
+#shop p {
+  padding: 0.2em;
+}
+
+#shop .buy input[type="submit"] {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background: #fcfcfc;
+  border: 1px solid #fcfcfc;
+  border-radius: 1em
+}
+
+#shop .products .img-p1 {
+  margin-bottom: 1.9em;
+  margin-top: 0.5em;
+}
+
+#shop .products .img-p2 {
+  margin-bottom: 3.1em;
+  margin-top: 1.75em;
+}
+
+#shop .products .img-p3 {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+footer {
+  background-color: var(--bg-color2);
+  color: var(--color2);
+  text-align: center;
+  line-height: 2em
+}
+
+footer a {
+  color: var(--color2);
+}
+
+@media only screen and (max-width: 550px) {
+  #shop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+** end of undefined **
+
