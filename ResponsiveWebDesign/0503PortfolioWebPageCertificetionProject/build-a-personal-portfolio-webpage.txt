@@ -1,0 +1,404 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:wght@200%7Cfamily=Oswald%7Cfamily=Roboto+Condensed:wght@700&display=swap" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <!--<meta http-equiv="refresh" content="5" />-->
+    </head>
+
+    <body>
+        <main id="main">
+            <section id="navbar">
+                <header>
+                    <i class='fas fa-code fa-9x' style='color:#b8b0a0'></i>
+                    <nav class="nav-bar">
+                        <ul class="nav-list">
+                            <li><a href="#main">Home</a></li>
+                            <li><a href="#welcome-section">About</a></li>
+                            <li><a href="#projects">Work</a></li>
+                            <li><a href="#profile">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </section>
+            
+            <section id="welcome-section">
+                <div class="background">
+                    <div class="info">
+                        <h1 class="name">Clément<br/>GROSSELLE</h1>
+                        <h2 class="desc">I try things.</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2 class="projects-section-header">What I've done yet:</h2>
+
+                <div class="projects-grid">
+                    <a href="https://codepen.io/clemgro/pen/poqqKaz" target="_blank" class="project-tile">
+                        <img src="https://raw.githubusercontent.com/clemgro/freeCodeCamp/main/ResponsiveWebDesign/0105SurveyFormCertificationProject/Preview.PNG" 
+                        alt="project" class="project-image"/>
+                        <p class="project-title">
+                            <span class="code">&lt </span>
+                            Survey Form
+                            <span class="code">/></span>
+                        </p>
+                    </a>
+                    <a href="https://codepen.io/clemgro/pen/QWzzxQR" target="_blank" class="project-tile">
+                        <img src="https://raw.githubusercontent.com/clemgro/freeCodeCamp/main/ResponsiveWebDesign/0205WankilTributeCertificationProject/Preview.PNG" 
+                        alt="project" class="project-image"/>
+                        <p class="project-title">
+                            <span class="code">&lt </span>
+                            Tribute Page
+                            <span class="code">/></span>
+                        </p>
+                    </a>
+                    <a href="https://codepen.io/clemgro/pen/LYMMrdj" target="_blank" class="project-tile">
+                        <img src="https://raw.githubusercontent.com/clemgro/freeCodeCamp/main/ResponsiveWebDesign/0304DocumentationPageCertificationProject/Preview.PNG" 
+                        alt="project" class="project-image"/>
+                        <p class="project-title">
+                            <span class="code">&lt </span>
+                            Documentation Page
+                            <span class="code">/></span>
+                        </p>
+                    </a>
+                    <a href="https://codepen.io/clemgro/pen/MWZZXGw" target="_blank" class="project-tile">
+                        <img src="https://raw.githubusercontent.com/clemgro/freeCodeCamp/main/ResponsiveWebDesign/0403LandingPageCertificationProject/Preview.PNG" 
+                        alt="project" class="project-image"/>
+                        <p class="project-title">
+                            <span class="code">&lt </span>
+                            Landing Page
+                            <span class="code">/></span>
+                        </p>
+                    </a>
+                </div>
+                
+            </section>
+            
+            <section id="profile">
+                <div class="profile-header">
+                    <h2>I'm open to work</h2>
+                    <p><i>You can contact me here</i></p>
+                </div>
+                <div class="profile-contact">
+                    <a id="profile-link" href="https://github.com/clemgro" target="_blank" class="contact-details">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a id="profile-link" href="https://www.freecodecamp.org/Petalux" target="_blank" class="contact-details">
+                        <i class="fab fa-free-code-camp"></i>
+                        freeCodeCamp
+                    </a>
+                    <a id="profile-link" href="https://www.linkedin.com/in/cl%C3%A9ment-grosselle/" target="_blank" class="contact-details">
+                        <i class="fab fa-linkedin-in"></i>
+                        LinkedIn
+                    </a>
+                    <a id="profile-link" href="mailto:clementgrosselle@gmail.com" target="_blank" class="contact-details">
+                        <i class="fas fa-at"></i>
+                        Send a mail
+                    </a>
+                    <a id="profile-link" href="tel:+33630633037" target="_blank" class="contact-details">
+                        <i class="fas fa-mobile"></i>
+                        Call me
+                    </a>
+                    
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+    --bg-color1: #b8b0a0;
+    --bg-color110: #a69e90;
+    --bg-color120: #817b70;
+    --bg_color2: #576c6e;
+    --bg-color210: #576c6e;
+    --bg-color220: #687b7d;
+    --bg-color3: #061319;
+    --bg-color310: #1f2b30;
+    --bg-color320: #384247;
+    --font-color1: #ffffff;
+    --font-color2: #000000;
+    --font-color3: #eae7e3;
+
+}
+
+* {
+    font-size: 62.5%;
+    /*border: 0.1px dotted red;*/
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: var(--bg-color3);
+    color: var(--font-color1);
+    box-shadow: 0 0 5rem var(--bg-color3);
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 50;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#navbar .fas {
+    font-size: 6rem;
+    margin-left: 1em;
+    justify-self: center;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    font-family: 'Dosis', sans-serif;
+}
+
+li {
+    padding: 1.5em;
+    list-style: none;
+    height: 100%;
+}
+
+#navbar a {
+    color: var(--font-color3);
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+#navbar a:hover {
+    background-color: var(--bg-color120);
+    color: var(--font-color2);
+    transition: 1s ease-in-out 0ms;
+}
+#navbar a:active {
+    transform: scale(1.5);
+}
+
+#welcome-section {
+    height: 100vh;
+    min-height: 50vh;
+    background: linear-gradient(130deg, 
+        var(--bg-color3), 
+        var(--bg-color310), 
+        var(--bg-color320));
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-image: url("https://images.pexels.com/photos/3331094/pexels-photo-3331094.jpeg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 70px 15px 70px 15px;
+    box-shadow: inset 0 0 20rem var(--bg-color3);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+    top: 30%;
+    z-index: 1;
+    width: 60%;
+    height: 40%;
+}
+
+.name {
+    font-size: 45em;
+    color: var(--font-color1);
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    padding: 2rem 0 0.5rem 0;
+    background: #38424793;
+    border-radius: 50px 5px 0 0;
+}
+
+.desc {
+    font-size: 20em;
+    color: var(--font-color3);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    font-family: 'Dosis', sans-serif;
+    padding: 0.5rem 0 2rem 0;
+    background: #38424793;
+    border-radius: 0 0 50px 5px;
+}
+
+
+#projects {
+    background: linear-gradient(130deg,
+        var(--bg-color1), 
+        var(--bg-color110), 
+        var(--bg-color120));
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem 5rem;
+}
+
+.projects-section-header{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    font: 20em "Dosis", sans-serif;
+    margin: 0.5em auto 0.5em auto;
+    padding-bottom: 0.25em;
+    border-bottom: solid var(--bg-color210);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.project-title {
+    text-align: center;
+    color: var(--font-color1);
+    font: 25em "Dosis", sans-serif;
+    align-items: center;
+}
+
+.project-image {
+    height:80%;
+    width: 100%;
+    align-self: flex-start;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.project-tile {
+    background: var(--bg-color320);  
+    box-shadow: 0 0 5px var(--bg-color3); 
+    border-radius: 1rem;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.code {
+    color: var(--bg-color320);
+    font-size: 110%;
+}
+
+.project-tile:hover .code{
+    color: var(--bg-color1);
+    transition: 0.3s ease-in;
+}
+
+#profile {
+    background: linear-gradient(130deg, 
+    var(--bg-color3), 
+    var(--bg-color310), 
+    var(--bg-color320));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-header {
+    color: var(--font-color1);
+    text-align: center;
+    margin: 5em;
+    font-family: "Dosis", sans-serif;
+}
+
+.profile-header h2 {
+    font-size: 30em;
+    margin: 1em auto 0;
+}
+
+.profile-header p {
+    font-size: 20em;
+    margin-bottom: 1em;
+}
+
+.profile-contact {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    display: inline-block;
+    font-size: 20em;
+    color: var(--font-color1);
+    font-family: "Dosis", sans-serif;
+    margin: 1em;
+}
+
+@media only screen and (max-width: 750px) {
+    #navbar a {
+        font-size: 2rem;
+    }
+
+    .projects-section-header {
+        font-size: 15em;
+    }
+}
+
+** end of undefined **
+
